@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dylan Dominguez</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Dylan Dominguez</h1>
+		<h2 id="f1">pianist</h2>
+		<h2 id="f2">singer</h2>
+		<h2 id="f3">poet</h2>
+		<h2 id="f4">teacher</h2>
+		<a onclick="openPhoto">photos</a>
+		<a onclick="openVideo">videos</a>
+		<a onclick="openAudio">audio</a><br/>
+		<a onclick="openWriting">writing</a>
+		<a onclick="openContact()">contact</a>
+		<center>		
+		<div id="menu" class="hide">
+					<button onclick="closeMenu()" type="button" id="closeButton">x</button>
+					<div id="contact">
+						<h2 id="contact">dylandominguez@gmail.com</h2>
+						<a id="contact" href="https://www.instagram.com/thedylandominguez/?hl=en" target="_blank">instagram</a><br/>
+						<a id="contact" href="">soundcloud</a><br/>
+						<a id="contact" href="https://twitter.com/dominguez639" target="_blank">twitter</a><br/>
+						<a id="contact" href="https://www.youtube.com/user/journeyboy6310" target="_blank">youtube</a><br/>
+						<a id="contact" href="">facebook</a>
+					</div>
+				</div>
+				<center>
+		<script>
+			const menuButton = document.getElementById("menuButton");
+			const menu = document.getElementById("menu");
+			function openContact() {
+				menu.setAttribute("class", "");
+				menuButton.setAttribute("class", "hide");
+			}
+			function closeMenu() {
+				menu.setAttribute("class", "hide");
+				menuButton.setAttribute("class", "");
+			}
+		</script>
+	</body>
+</html>
+
