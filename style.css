@@ -16,13 +16,29 @@ h1 {
 	text-shadow: 2px 2px darkred;
 }
 
-h2, a {
+h2, a, p {
 	position: relative;
 	font-size: 15px;
+	text-shadow: 1px 1px black;
 	font-family: "font2", garamond, serif;
 	color: white;
-	left: 200px;
+}
 
+p {
+	text-shadow: none;
+	font-size: 10px;
+	color: black;
+}
+
+.open {
+	left: 280px;
+	top: -170px;
+}
+
+a {
+	text-shadow: 1px 1px white;
+	color: darkred;
+	text-align: center;
 }
 
 .hide {
@@ -37,6 +53,8 @@ h2, a {
 	border: 4px ridge darkred;
 	border-radius: 20px;
 	top: -90px;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 button {
@@ -61,18 +79,23 @@ button:hover {
 	border: 1px solid darkred;
 }
 
-a {
-	text-shadow: 1px 1px white;
-	color: darkred;
-	left: 280px;
-	top: -170px;
-	text-align: center;
+#about, #write, #music, #vid {
+	position: relative;
+	top: -100px;
+	width: 475px;
+	height: 500px;
 }
 
-#contact {
-	left: 0px;
-	top: 0px;
-	color: black;
+#write {
+	top: -600px;
+}
+
+#music {
+	top: -1100px;
+}
+
+#vid {
+	top: -1600px;
 }
 
 @font-face {
@@ -94,6 +117,7 @@ a {
     -webkit-animation: fragtype 24s steps(50, end) 0s infinite;
     animation: fragtype 24s steps(50, end) 0s infinite;
 	top: -90px;
+	left: 200px;
 }
 
 #f2 {
