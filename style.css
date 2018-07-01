@@ -18,7 +18,7 @@ h1 {
 
 h2, a, p {
 	position: relative;
-	font-size: 15px;
+	font-size: 20px;
 	text-shadow: 1px 1px black;
 	font-family: "font2", garamond, serif;
 	color: white;
@@ -26,19 +26,23 @@ h2, a, p {
 
 p {
 	text-shadow: none;
-	font-size: 10px;
+	font-size: 15px;
 	color: black;
 }
 
 .open {
 	left: 280px;
 	top: -170px;
+	background-color: rgba(0,0,0,0.8);
+	text-shadow: 3px 3px 10px black;
+	border-radius: 7px;
+	padding: 2px;
+	font-size: 25px;
 }
 
 a {
-	text-shadow: 1px 1px white;
 	color: darkred;
-	text-align: center;
+	font-size: 20px;
 }
 
 .hide {
@@ -79,23 +83,34 @@ button:hover {
 	border: 1px solid darkred;
 }
 
-#about, #write, #music, #vid {
+#about, #write, #music, #vid, #pic {
 	position: relative;
-	top: -100px;
+	top: -150px;
 	width: 475px;
 	height: 500px;
 }
 
 #write {
-	top: -600px;
+	top: -700px;
 }
 
 #music {
-	top: -1100px;
+	top: -1150px;
 }
 
 #vid {
-	top: -1600px;
+	top: -1650px;
+}
+
+#pic {
+	top: -2150px;
+}
+
+img {
+	height: 350px;
+	width: 350px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 @font-face {
@@ -105,7 +120,7 @@ button:hover {
 
 @font-face {
     font-family: font2;
-    src: url("j.ttf") format("opentype");
+    src: url("e.ttf") format("opentype");
 }
 
 
@@ -116,24 +131,24 @@ button:hover {
     overflow:hidden;
     -webkit-animation: fragtype 24s steps(50, end) 0s infinite;
     animation: fragtype 24s steps(50, end) 0s infinite;
-	top: -90px;
+	top: -80px;
 	left: 200px;
 }
 
 #f2 {
-	top:-115px;
+	top:-118px;
     -webkit-animation: fragtype 24s steps(50, end) 6s infinite;
     animation: fragtype 24s steps(50, end) 6s infinite;
 }
 
 #f3 {
-	top: -150px;
+	top: -155px;
     animation: fragtype 24s steps(50, end) 12s infinite;
     -webkit-animation: fragtype 24s steps(50, end) 12s infinite;
 }
 
 #f4 {
-	top: -180px;
+	top: -193px;
     animation: fragtype 24s steps(50, end) 18s infinite;
     -webkit-animation: fragtype 24s steps(50, end) 18s infinite;
 }

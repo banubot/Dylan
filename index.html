@@ -12,7 +12,7 @@
 		<h2 id="f3">poet</h2>
 		<h2 id="f4">teacher</h2>
 		<a class="open" onclick="openBio()">about</a>
-		<a class="open" onclick="openPhoto">photos</a>
+		<a class="open" onclick="openPhoto()">photos</a>
 		<a class="open" onclick="openVideo()">videos</a><br/>
 		<a class="open" onclick="openAudio()">audio</a>
 		<a class="open" onclick="openWrite()">writing</a>
@@ -148,7 +148,7 @@
 					</p>
 				</div>
 				<div id="vid" class="hide"> 
-					<iframe width="470" height="300" id="vidPlay" src="https://www.youtube.com/watch?v=zxb5ZuWCWWs"></iframe> 
+					<iframe width="470" height="300" id="vidPlay" src="https://www.youtube.com/embed/zxb5ZuWCWWs"></iframe> 
 					<h2 id="vidName">YO this is the name of the video</h2>
 					<a onclick="vex1()">example vid #1</a>
 					<p>this is a song i wrote when blah blah blha
@@ -166,10 +166,20 @@
 					<p> This is me reading a poem...
 					</p>
 				</div>
+				<div id="pic" class="hide">
+					<img src="a.png">
+					<h2>So good at piano!</h2>
+					<img src="b.JPG">
+					<h2>Look at this boy eating a burrito :')</h2>
+					<img src="c.JPG">
+					<h2>Dwah so cute!</h2>
+				</div>
+
 			</div>
 		<center>
 		<script>
 			const menu = document.getElementById("menu");
+			const pic = document.getElementById("pic");
 			const contact = document.getElementById("contact");
 			const about = document.getElementById("about");
 			const write = document.getElementById("write");
@@ -182,6 +192,7 @@
 			const player = document.getElementById("player");
 			function openContact() {
 				about.setAttribute("class", "hide");
+				pic.setAttribute("class", "hide");
 				write.setAttribute("class", "hide");
 				music.setAttribute("class", "hide");
 				vid.setAttribute("class", "hide");
@@ -191,6 +202,7 @@
 			}
 			function openWrite() {
 				vid.setAttribute("class", "hide");
+				pic.setAttribute("class", "hide");
 				about.setAttribute("class", "hide");
 				contact.setAttribute("class", "hide");
 				music.setAttribute("class", "hide");
@@ -198,8 +210,20 @@
 				write.setAttribute("class", "");
 				menu.setAttribute("style","overflow-y:auto");
 			}
+			function openPhoto() {
+				vid.setAttribute("class", "hide");
+				about.setAttribute("class", "hide");
+				contact.setAttribute("class", "hide");
+				music.setAttribute("class", "hide");
+				menu.setAttribute("class", "");
+				write.setAttribute("class", "hide");
+				pic.setAttribute("class", "");
+				menu.setAttribute("style","overflow-y:auto");
+			}
+
 			function openBio() {
 				vid.setAttribute("class", "hide");
+				pic.setAttribute("class", "hide");
 				contact.setAttribute("class", "hide");
 				write.setAttribute("class", "hide");
 				music.setAttribute("class", "hide");
@@ -210,6 +234,7 @@
 			function openAudio() {
 				about.setAttribute("class", "hide");
 				vid.setAttribute("class", "hide");
+				pic.setAttribute("class", "hide");
 				contact.setAttribute("class", "hide");
 				write.setAttribute("class", "hide");
 				songName.innerHTML = "default song";
@@ -222,7 +247,8 @@
 			function openVideo() {
 				vid.setAttribute("class", "");
 				vidName.innerHTML = "default song";
-				vidPlay.setAttribute("src","https://www.youtube.com/watch?v=zxb5ZuWCWWs");
+				pic.setAttribute("class", "hide");
+				vidPlay.setAttribute("src","https://www.youtube.com/embed/zxb5ZuWCWWs");
 				about.setAttribute("class", "hide");
 				contact.setAttribute("class", "hide");
 				music.setAttribute("class", "hide");
@@ -238,6 +264,7 @@
 				write.setAttribute("class", "hide");
 				music.setAttribute("class", "hide");
 				menu.setAttribute("style","overflow-y:hidden");
+				pic.setAttribute("class", "hide");
 			}
 			function ex1() {
 				song.setAttribute("src","b.mp3");
@@ -255,15 +282,15 @@
 				player.load();
 			}
 			function vex1() {
-				vidPlay.setAttribute("src","https://www.youtube.com/watch?v=EqmOzcvuGE4");
+				vidPlay.setAttribute("src","https://www.youtube.com/embed/EqmOzcvuGE4");
 				vidName.innerHTML = "example 1";
 			}
 			function vex2() {
-				vidPlay.setAttribute("src","https://www.youtube.com/watch?v=5o7RIT_aE-E");
+				vidPlay.setAttribute("src","https://www.youtube.com/embed/5o7RIT_aE-E");
 				vidName.innerHTML = "example 2";
 			}
 			function vex3() {
-				vidPlay.setAttribute("src","https://www.youtube.com/watch?v=KFPXAwD0aoI");
+				vidPlay.setAttribute("src","https://www.youtube.com/embed/KFPXAwD0aoI");
 				vidName.innerHTML = "example 3";
 			}
 		</script>
