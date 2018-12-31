@@ -8,17 +8,20 @@ body {
 }
 
 h1 {
+	max-width: 80%;
 	font-size: 100px;
 	position: relative;
 	padding-left: 70px;
 	font-family: "font", garamond, serif;
-	color: white;
-	text-shadow: 2px 2px darkred;
+	color: lightgreen;
+    color: rgba(192, 34, 87, 0.9);
+	text-shadow: 2px 2px white;
+	z-index: -5;
 }
 
 h2, a, p {
 	position: relative;
-	font-size: 20px;
+	font-size: 50px;
 	text-shadow: 1px 1px black;
 	font-family: "font2", garamond, serif;
 	color: white;
@@ -30,97 +33,16 @@ p {
 	color: black;
 }
 
-.open {
-	left: 280px;
-	top: -170px;
-	background-color: rgba(0,0,0,0.8);
-	text-shadow: 3px 3px 10px black;
-	border-radius: 7px;
-	padding: 2px;
-	font-size: 25px;
-}
-
-a {
-	color: darkred;
-	font-size: 20px;
-}
-
-.hide {
-	visibility: hidden;
-}
-
-#menu {
-	width: 500px;
-	height: 500px;
-	position: relative;
-	background-color: rgba(255,255,255,0.8);
-	border: 4px ridge darkred;
-	border-radius: 20px;
-	top: -90px;
-	overflow-y: hidden;
-	overflow-x: hidden;
-}
-
-button {
-	text-shadow: 2px 2px black;
-	background-color: darkred;
-	border-radius: 4px;
-	border: 1px solid white;
-	color : white;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	position: relative;
-	left: 220px;
-	top: 5px;
-
-}
-
-
-button:hover {
-	text-shadow: 2px 2px black;
-	color: darkred;
-	background-color: black;
-	border: 1px solid darkred;
-}
-
-#about, #write, #music, #vid, #pic {
-	position: relative;
-	top: -150px;
-	width: 475px;
-	height: 500px;
-}
-
-#write {
-	top: -700px;
-}
-
-#music {
-	top: -1150px;
-}
-
-#vid {
-	top: -1650px;
-}
-
-#pic {
-	top: -2150px;
-}
-
 img {
-	height: 350px;
-	width: 350px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
-
 @font-face {
     font-family: font;
-    src: url("g.ttf") format("opentype");
+    src: url("a.ttf") format("opentype");
 }
 
 @font-face {
     font-family: font2;
-    src: url("e.ttf") format("opentype");
+    src: url("b.otf") format("opentype");
 }
 
 
@@ -133,22 +55,24 @@ img {
     animation: fragtype 24s steps(50, end) 0s infinite;
 	top: -80px;
 	left: 200px;
+	max-height: 50px;
+	max-width: 40%
 }
 
 #f2 {
-	top:-118px;
+	top:-170px;
     -webkit-animation: fragtype 24s steps(50, end) 6s infinite;
     animation: fragtype 24s steps(50, end) 6s infinite;
 }
 
 #f3 {
-	top: -155px;
+	top: -260px;
     animation: fragtype 24s steps(50, end) 12s infinite;
     -webkit-animation: fragtype 24s steps(50, end) 12s infinite;
 }
 
 #f4 {
-	top: -193px;
+	top: -355px;
     animation: fragtype 24s steps(50, end) 18s infinite;
     -webkit-animation: fragtype 24s steps(50, end) 18s infinite;
 }
@@ -168,11 +92,15 @@ img {
 }
 
 ul {
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(192, 34, 87, 0.9);
+  background-color: lightgreen;
+  opacity: 0.9;
 }
 
 li {
@@ -183,12 +111,13 @@ li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  font-size: 33px;
+  padding: 10px 8px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 li.dropdown {
@@ -217,3 +146,8 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.social {
+	float: right;
+}
+
+
