@@ -1,10 +1,11 @@
 body {
 	background: no-repeat;
-	 background: url(dylan.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
+	 background: url(dylan.png) no-repeat center center fixed;
+  /*  -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+	background-color: rgb(255, 229, 229);
 }
 
 h1 {
@@ -19,7 +20,21 @@ h1 {
 	z-index: -5;
 }
 
-h2, a, p {
+.scroll {
+	font-size: 100px;
+}
+
+#main {
+	width: 80%;
+   height: 500px;	
+}
+
+iframe {
+	position: relative;
+	justify-content: center;
+}
+
+h2, p, a {
 	position: relative;
 	font-size: 50px;
 	text-shadow: 1px 1px black;
