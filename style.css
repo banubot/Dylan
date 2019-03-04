@@ -10,18 +10,28 @@ body {
 
 h1 {
 	max-width: 80%;
-	font-size: 100px;
+	font-size: 150px;
 	position: relative;
 	padding-left: 70px;
 	font-family: "font", garamond, serif;
-	color: lightgreen;
     color: rgba(192, 34, 87, 0.9);
-	text-shadow: 2px 2px white;
+	color: lightgreen;
+	text-shadow: 2px 2px black;
 	z-index: -5;
 }
 
-.scroll {
+.scrollAbout {
 	font-size: 100px;
+	justify: center;
+}
+
+#bio {
+	font-size: 50px;
+	width: 75%;
+	border-radius: 90px;
+	background-color: rgba(256, 256, 256, 0.8);
+	text-align: center;
+	padding: 20px;
 }
 
 #main {
@@ -113,8 +123,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(192, 34, 87, 0.9);
   background-color: lightgreen;
+  background-color: rgba(192, 34, 87, 0.9);
   opacity: 0.9;
 }
 
