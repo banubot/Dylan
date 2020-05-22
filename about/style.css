@@ -1,0 +1,47 @@
+body {
+	background: no-repeat;
+	 background: url(dylan.png) no-repeat center center fixed;
+  /*  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+	background-color: rgb(255, 229, 229);
+}
+
+#main {
+	position: fixed;
+	top: 0;
+	left: 10vw;
+	height: 100vh;
+	width: 80vw;
+	background-color: rgba(256,256,256,0.8);
+}
+
+#about {
+	padding: 1vw 9vw;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5vw;
+}
+
+#name {
+	position: relative;
+	top: 2vw;
+	font-family: "Abril Fatface", serif;
+	font-size: 4vw;
+}
+
+.nav {
+	 font-family: 'Montserrat', sans-serif;
+	 text-decoration-line: none;
+	 text-transform: uppercase;
+	 font-size: 1.5vw;
+	 margin: 1vw;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+
+

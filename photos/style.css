@@ -1,0 +1,132 @@
+body {
+	background: no-repeat;
+	 background: url(dylan.png) no-repeat center center fixed;
+  /*  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+	background-color: rgb(255, 229, 229);
+}
+
+#main {
+	position: fixed;
+	top: 0;
+	left: 10vw;
+	height: 100vh;
+	width: 80vw;
+	background-color: rgba(256,256,256,0.8);
+}
+
+#about {
+	padding: 1vw 9vw;
+	max-width: 100vh;
+
+	max-height: 100vh;
+}
+
+#name {
+	position: relative;
+	top: 2vw;
+	font-family: "Abril Fatface", serif;
+	font-size: 4vw;
+}
+
+.nav {
+	 font-family: 'Montserrat', sans-serif;
+	 text-decoration-line: none;
+	 text-transform: uppercase;
+	 font-size: 1.5vw;
+	 margin: 1vw;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  padding: 3vh;
+  font-size: 5vh;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+.prev {
+	left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 3vh;
+  padding: 2vh 3vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Container for image text */
+.caption-container {
+  background-color: #222;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
