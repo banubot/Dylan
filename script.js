@@ -1,13 +1,13 @@
 var backgrounds = new Array(
-	'9.jpeg',
-	'2.png',
-	'5.png',
-	'8.jpeg',
-	'14.jpg',
-	'1.png',
-	'6.jpg',
-	'4.png',
-	'12.jpeg'
+	'photos/14.jpg',
+	'photos/12.jpeg',
+	'photos/5.png',
+	'photos/6.jpg',
+	'photos/9.jpeg',
+	'photos/2.png',
+	'photos/8.jpeg',
+	'photos/1.png',
+	'photos/4.png'
 );
 
 var current = 0;
