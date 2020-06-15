@@ -1,35 +1,64 @@
-body {
-	background: no-repeat;
-	 background: url(dylan.png) no-repeat center center fixed;
-  /*  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-	background-color: rgb(255, 229, 229);
+div {
+	max-width: 75vw;
+}
+
+#bkg {
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	z-index: -1;
 }
 
 #main {
-	position: fixed;
 	top: 0;
-	left: 10vw;
 	height: 100vh;
-	width: 80vw;
+	left: 12vw;
+	width: 75vw;
 	background-color: rgba(256,256,256,0.8);
 }
 
-#name {
+#nav, #main, #bkg {
+	position: fixed;
+}
+
+#name, h2, #social, #media, #photos, #about, .photo, .col2, .col3, .nav {
 	position: relative;
-	top: 10vh;
+}
+
+#name {
+	top: 25vh;
 	font-family: "Abril Fatface", serif;
-	font-size: 8vw;
+	text-transform: uppercase;
+	font-size: 6vw;
 }
 
 a {
-	 font-family: 'Montserrat', sans-serif;
-	 text-decoration-line: none;
-	 text-transform: uppercase;
-	 font-size: 1.5vw;
-	 margin: 1vw;
+	text-decoration-line: none;
+	margin: 1vw;
+	color: black;
+}
+
+a:hover {
+	color: grey;
+}
+
+.nav, p {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 2vw;
+	margin: 4vw;
+}
+
+p {
+	font-size: 1.8vw;
+}
+
+h2 {
+	font-family: "Abril Fatface", serif;
+	font-size: 3vw;
+	text-transform: uppercase;
+	left: 5vw;
 }
 
 li {
@@ -37,12 +66,66 @@ li {
 	display: inline;
 }
 
-img {
+.logo {
 	height: 3vw;
 }
 
 #social {
-	position: relative;
-	top: 10vw;
+	top: 50vh;
 }
 
+#media, #photos, #about {
+	top: 90vh;
+	left: 10vw;
+	padding-top: 10vh;
+}
+ 
+#youtube {
+	display: inline;
+}
+
+iframe {
+	height: 45vw;
+	width: 60vw;
+}
+
+.photo {
+	height: 22vw;
+	width: 30vw;
+	left: 10vw;
+}
+
+.col2 {
+	left: 22vw;
+}
+
+.col3 {
+	left: 35vw;
+}
+
+#blurb {
+	text-transform: none;
+	width: 60vw;
+	padding-bottom: 10vh;
+}
+
+#nav {
+	width: 75vw;
+	z-index: 1;
+	left: 12vw;
+	margin: 0;
+	padding: 2vw 0;
+	top: 0;
+	background-color: rgba(256,256,256,1);
+}
+
+.nav {
+	left: 0;
+	margin: 0;
+	padding: 2vw 3vw;
+}
+
+.nav:hover {
+	background-color: rgba(0,0,0,0.03);
+
+}
