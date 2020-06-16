@@ -27,10 +27,11 @@ div {
 }
 
 #name {
-	top: 30vh;
+	top: 25vh;
 	font-family: "Abril Fatface", serif;
 	text-transform: uppercase;
 	font-size: 6vw;
+	letter-spacing: 0.3em;
 }
 
 a {
@@ -46,8 +47,8 @@ a:hover {
 .nav, p {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 2vw;
-	margin: 4vw;
+	font-size: 1.5vw;
+	margin: 3vw;
 }
 
 p {
@@ -114,15 +115,15 @@ iframe {
 	z-index: 1;
 	left: 12vw;
 	margin: 0;
-	padding: 2vw 0;
+	padding: 1.5vw 0;
 	top: 0;
 	background-color: rgba(256,256,256,1);
 }
 
 .nav {
 	left: 0;
-	margin: 0;
-	padding: 2vw 3vw;
+	margin: 2vw 0;
+	padding: 1.5vw 4vw;
 }
 
 .nav:hover {
